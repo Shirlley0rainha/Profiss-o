@@ -6,73 +6,107 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #fff;
-    color: #333;
+    font-family: 'Georgia', serif; /* Fonte mais elegante */
+    line-height: 1.7;
+    background-color: #FFFFFF;
+    color: #333333;
     margin: 0;
 }
 
+/* Banner principal */
 header {
     width: 100%;
-}
-
-.banner {
-    background-color: #006A89;
-    color: white;
+    background-color: #006A89; /* Azul fundo do mar */
     text-align: center;
     padding: 80px 20px;
 }
 
 .banner h1 {
-    font-size: 2.5em;
+    font-size: 3em;
+    font-family: 'Times New Roman', serif;
+    color: #FFFFFF;
     margin-bottom: 20px;
 }
 
 .banner p {
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-style: italic;
+    color: #F1F1F1;
 }
 
+/* Conteúdo principal */
 .content {
     padding: 60px 20px;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 30px;
 }
 
 .section {
-    background-color: #f4f4f4;
+    background-color: #F8F8F8;
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .section h2 {
+    font-size: 2.2em;
     color: #006A89;
-    font-size: 2em;
     margin-bottom: 15px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .section p {
-    font-size: 1.1em;
-    color: #555;
+    font-size: 1.2em;
+    color: #555555;
+    line-height: 1.6;
 }
 
+/* Botões e links */
+button, .highlight {
+    background-color: #FFD700; /* Dourado suave */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .highlight:hover {
+    background-color: #FFB400; /* Dourado mais intenso */
+}
+
+a {
+    text-decoration: none;
+    color: #006A89;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #FFD700; /* Dourado suave */
+}
+
+/* Rodapé */
 footer {
     background-color: #006A89;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -80,4 +114,5 @@ footer {
 
 footer p {
     font-size: 14px;
+    font-family: 'Times New Roman', serif;
 }
