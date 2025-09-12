@@ -16,10 +16,10 @@ body {
 /* Banner principal */
 header {
     width: 100%;
-    background: #f99aaa;
+    background: linear-gradient(135deg, #FFC0CB, #FFB6C1); /* Rosa pastel */
     text-align: center;
     padding: 80px 20px;
-    color: white;
+    color: #333333;
 }
 
 .banner h1 {
@@ -31,23 +31,23 @@ header {
 .banner p {
     font-size: 1.3em;
     font-style: italic;
-    color: #f1f1f1;
+    color: #555555;
 }
 
 /* Conteúdo principal */
 .content {
     padding: 60px 20px;
-    max-width: 1100px;
+    max-width: 1200px; /* Aumentei a largura máxima */
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
+    display: flex;
+    flex-direction: column; /* Coloca as colunas uma embaixo da outra */
+    gap: 40px; /* Aumenta o espaço entre as seções */
 }
 
 /* Seções */
 .section {
-    background-color: #F8F8F8;
-    padding: 30px;
+    background-color: #FDFDFD;
+    padding: 40px; /* Aumenta o espaço interno */
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     text-align: center;
@@ -61,8 +61,8 @@ header {
 
 .section h2 {
     font-size: 2.2em;
-    color: #f99aaa;
-    margin-bottom: 15px;
+    color: #FF69B4; /* Rosa vibrante para títulos */
+    margin-bottom: 20px;
     font-family: 'Georgia', serif;
     font-weight: bold;
     letter-spacing: 1px;
@@ -76,9 +76,9 @@ header {
 
 /* Botões e links */
 button, .highlight {
-    background-color: #f99aaa;
-    color: white;
-    border: 2px solid #f99aaa;
+    background-color: #FFB6C1;
+    color: #333333;
+    border: 2px solid #FFB6C1;
     padding: 15px 30px;
     border-radius: 50px;
     font-size: 1.1em;
@@ -90,27 +90,27 @@ button, .highlight {
 
 button:hover, .highlight:hover {
     background-color: white;
-    color: #f99aaa;
-    border-color: #f99aaa;
+    color: #FFB6C1;
+    border-color: #FFB6C1;
     transform: translateY(-5px);
 }
 
 a {
     text-decoration: none;
-    color: #f99aaa;
+    color: #FF69B4;
     font-weight: bold;
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 a:hover {
-    color: #F8B4C0;
+    color: #FFC0CB;
     text-decoration: underline;
 }
 
 /* Rodapé */
 footer {
-    background-color: #f99aaa;
-    color: white;
+    background-color: #FFB6C1;
+    color: #333333;
     text-align: center;
     padding: 20px 0;
     position: fixed;
@@ -126,6 +126,7 @@ footer p {
 /* Responsividade - Ajuste para telas menores */
 @media (max-width: 768px) {
     .content {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
 }
