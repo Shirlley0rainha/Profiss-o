@@ -16,10 +16,10 @@ body {
 /* Banner principal */
 header {
     width: 100%;
-    background: linear-gradient(135deg, #FFC0CB, #FFB6C1); /* Rosa pastel */
+    background: linear-gradient(135deg, #FFC0CB, #FFB6C1); /* Fundo rosa pastel */
     text-align: center;
     padding: 80px 20px;
-    color: #333333;
+    color: #333333; /* Texto escuro para maior contraste */
 }
 
 .banner h1 {
@@ -37,17 +37,17 @@ header {
 /* Conteúdo principal */
 .content {
     padding: 60px 20px;
-    max-width: 1200px; /* Aumentei a largura máxima */
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column; /* Coloca as colunas uma embaixo da outra */
-    gap: 40px; /* Aumenta o espaço entre as seções */
+    flex-direction: column;
+    gap: 40px;
 }
 
 /* Seções */
 .section {
-    background-color: #FDFDFD;
-    padding: 40px; /* Aumenta o espaço interno */
+    background-color: #F8F8F8; /* Fundo cinza claro */
+    padding: 40px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     text-align: center;
@@ -61,7 +61,7 @@ header {
 
 .section h2 {
     font-size: 2.2em;
-    color: #FF69B4; /* Rosa vibrante para títulos */
+    color: #FFB6C1; /* Títulos em rosa */
     margin-bottom: 20px;
     font-family: 'Georgia', serif;
     font-weight: bold;
@@ -70,14 +70,14 @@ header {
 
 .section p {
     font-size: 1.2em;
-    color: #555555;
+    color: white; /* Texto das colunas em branco */
     line-height: 1.6;
 }
 
 /* Botões e links */
 button, .highlight {
     background-color: #FFB6C1;
-    color: #333333;
+    color: white;
     border: 2px solid #FFB6C1;
     padding: 15px 30px;
     border-radius: 50px;
@@ -110,7 +110,7 @@ a:hover {
 /* Rodapé */
 footer {
     background-color: #FFB6C1;
-    color: #333333;
+    color: white;
     text-align: center;
     padding: 20px 0;
     position: fixed;
