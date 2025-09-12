@@ -16,7 +16,7 @@ body {
 /* Banner principal */
 header {
     width: 100%;
-    background: linear-gradient(135deg, #006A89, #004E5F); /* Gradiente suave no fundo */
+    background: linear-gradient(135deg, #F9A4C0, #F76B9B); /* Gradiente suave em tons de rosa */
     text-align: center;
     padding: 80px 20px;
     color: white;
@@ -31,7 +31,7 @@ header {
 .banner p {
     font-size: 1.3em;
     font-style: italic;
-    color: #F1F1F1;
+    color: #FFF0F5;
 }
 
 /* Conteúdo principal */
@@ -46,7 +46,7 @@ header {
 
 /* Seções */
 .section {
-    background-color: #F8F8F8;
+    background-color: #FDFDFD;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -61,7 +61,7 @@ header {
 
 .section h2 {
     font-size: 2.2em;
-    color: #006A89;
+    color: #F76B9B; /* Cor de destaque para os títulos */
     margin-bottom: 15px;
     font-family: 'Georgia', serif;
     font-weight: bold;
@@ -76,9 +76,9 @@ header {
 
 /* Botões e links */
 button, .highlight {
-    background-color: #FFD700; /* Dourado suave */
+    background-color: #F76B9B; /* Rosa vibrante */
     color: white;
-    border: 2px solid #FFD700;
+    border: 2px solid #F76B9B;
     padding: 15px 30px;
     border-radius: 50px;
     font-size: 1.1em;
@@ -88,4 +88,44 @@ button, .highlight {
     transition: all 0.3s ease;
 }
 
-button:hover, .
+button:hover, .highlight:hover {
+    background-color: white;
+    color: #F76B9B;
+    border-color: #F76B9B;
+    transform: translateY(-5px);
+}
+
+a {
+    text-decoration: none;
+    color: #F76B9B;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+    color: #F9A4C0; /* Rosa mais claro */
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #F76B9B;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 14px;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Responsividade - Ajuste para telas menores */
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr; /* 1 coluna em telas menores */
+    }
+}
