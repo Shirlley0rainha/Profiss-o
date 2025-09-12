@@ -6,124 +6,6 @@
 }
 
 body {
-    font-family: 'Georgia', serif; /* Fonte mais elegante */
-    line-height: 1.7;
-    background-color: #FFFFFF;
-    color: #333333;
-    margin: 0;
-}
-
-/* Banner principal */
-header {
-    width: 100%;
-    background-color: #006A89; /* Azul fundo do mar */
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.banner h1 {
-    font-size: 3em;
-    font-family: 'Times New Roman', serif;
-    color: #FFFFFF;
-    margin-bottom: 20px;
-}
-
-.banner p {
-    font-size: 1.3em;
-    font-style: italic;
-    color: #F1F1F1;
-}
-
-/* Conteúdo principal */
-.content {
-    padding: 60px 20px;
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
-}
-
-.section {
-    background-color: #F8F8F8;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.section h2 {
-    font-size: 2.2em;
-    color: #006A89;
-    margin-bottom: 15px;
-    font-family: 'Georgia', serif;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.section p {
-    font-size: 1.2em;
-    color: #555555;
-    line-height: 1.6;
-}
-
-/* Botões e links */
-button, .highlight {
-    background-color: #FFD700; /* Dourado suave */
-    color: #fff;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-size: 1.2em;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
-}
-
-button:hover, .highlight:hover {
-    background-color: #FFB400; /* Dourado mais intenso */
-}
-
-a {
-    text-decoration: none;
-    color: #006A89;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #FFD700; /* Dourado suave */
-}
-
-/* Rodapé */
-footer {
-    background-color: #006A89;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer p {
-    font-size: 14px;
-    font-family: 'Times New Roman', serif;
-}
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
     font-family: 'Georgia', serif; /* Fonte elegante */
     line-height: 1.7;
     background-color: #FFFFFF;
@@ -164,25 +46,17 @@ header {
 
 /* Seções */
 .section {
-    background-color: #FFFFFF;
-    padding: 35px;
+    background-color: #F8F8F8;
+    padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     text-align: center;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.section.visible {
-    opacity: 1;
-    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section:hover {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-    transform: translateY(-10px);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .section h2 {
@@ -214,84 +88,4 @@ button, .highlight {
     transition: all 0.3s ease;
 }
 
-button:hover, .highlight:hover {
-    background-color: white;
-    color: #006A89;
-    border-color: #006A89;
-    transform: translateY(-5px);
-}
-
-a {
-    text-decoration: none;
-    color: #006A89;
-    font-weight: bold;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-a:hover {
-    color: #FFD700; /* Dourado suave */
-    text-decoration: underline;
-}
-
-/* Rodapé */
-footer {
-    background-color: #003C54;
-    color: white;
-    padding: 40px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer .footer-content p {
-    margin-bottom: 15px;
-    font-size: 16px;
-}
-
-footer .social-icons a {
-    margin: 0 15px;
-    color: #FFD700;
-    font-size: 20px;
-    transition: color 0.3s ease;
-}
-
-footer .social-icons a:hover {
-    color: #F1F1F1;
-}
-
-/* Responsividade - Ajuste para telas menores */
-@media (max-width: 768px) {
-    .content {
-        grid-template-columns: 1fr; /* 1 coluna em telas menores */
-    }
-}
-
-/* Animações de fade-in nas seções */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Adicionando animação de fade-in para todas as seções */
-.section {
-    animation: fadeIn 0.6s ease-out;
-}
-
-/* Efeito de hover para links */
-a:hover {
-    color: #FFD700;
-    text-decoration: underline;
-}
+button:hover, .
