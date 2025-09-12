@@ -19,19 +19,19 @@ header {
     background: linear-gradient(135deg, #FFC0CB, #FFB6C1); /* Fundo rosa pastel */
     text-align: center;
     padding: 80px 20px;
-    color: #333333; /* Texto escuro para maior contraste */
 }
 
 .banner h1 {
     font-size: 3em;
     font-family: 'Times New Roman', serif;
+    color: white; /* Cor do título em branco */
     margin-bottom: 20px;
 }
 
 .banner p {
     font-size: 1.3em;
     font-style: italic;
-    color: #555555;
+    color: white; /* Cor do subtítulo em branco */
 }
 
 /* Conteúdo principal */
@@ -61,7 +61,7 @@ header {
 
 .section h2 {
     font-size: 2.2em;
-    color: #FFB6C1; /* Títulos em rosa */
+    color: #FFB6C1; /* Títulos em rosa pastel */
     margin-bottom: 20px;
     font-family: 'Georgia', serif;
     font-weight: bold;
@@ -70,14 +70,14 @@ header {
 
 .section p {
     font-size: 1.2em;
-    color: white; /* Texto das colunas em branco */
+    color: black; /* Texto das colunas em preto */
     line-height: 1.6;
 }
 
 /* Botões e links */
 button, .highlight {
     background-color: #FFB6C1;
-    color: white;
+    color: #333333; /* Texto do botão em cor escura para contraste */
     border: 2px solid #FFB6C1;
     padding: 15px 30px;
     border-radius: 50px;
@@ -110,7 +110,7 @@ a:hover {
 /* Rodapé */
 footer {
     background-color: #FFB6C1;
-    color: white;
+    color: white; /* Texto do rodapé em branco */
     text-align: center;
     padding: 20px 0;
     position: fixed;
