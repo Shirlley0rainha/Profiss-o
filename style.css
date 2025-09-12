@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Georgia', serif; /* Fonte elegante */
+    font-family: 'Georgia', serif;
     line-height: 1.7;
     background-color: #FFFFFF;
     color: #333333;
@@ -16,10 +16,10 @@ body {
 /* Banner principal */
 header {
     width: 100%;
-    background: linear-gradient(135deg, #FFC0CB, #FFB6C1); /* Gradiente de rosa claro */
+    background: #f99aaa;
     text-align: center;
     padding: 80px 20px;
-    color: #333333; /* Texto escuro para maior contraste */
+    color: white;
 }
 
 .banner h1 {
@@ -31,7 +31,7 @@ header {
 .banner p {
     font-size: 1.3em;
     font-style: italic;
-    color: #555555;
+    color: #f1f1f1;
 }
 
 /* Conteúdo principal */
@@ -46,7 +46,7 @@ header {
 
 /* Seções */
 .section {
-    background-color: #FDFDFD;
+    background-color: #F8F8F8;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -61,7 +61,7 @@ header {
 
 .section h2 {
     font-size: 2.2em;
-    color: #FF69B4; /* Rosa mais vibrante para o título */
+    color: #f99aaa;
     margin-bottom: 15px;
     font-family: 'Georgia', serif;
     font-weight: bold;
@@ -71,4 +71,61 @@ header {
 .section p {
     font-size: 1.2em;
     color: #555555;
-    line
+    line-height: 1.6;
+}
+
+/* Botões e links */
+button, .highlight {
+    background-color: #f99aaa;
+    color: white;
+    border: 2px solid #f99aaa;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+button:hover, .highlight:hover {
+    background-color: white;
+    color: #f99aaa;
+    border-color: #f99aaa;
+    transform: translateY(-5px);
+}
+
+a {
+    text-decoration: none;
+    color: #f99aaa;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+    color: #F8B4C0;
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #f99aaa;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 14px;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Responsividade - Ajuste para telas menores */
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
