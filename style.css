@@ -16,10 +16,10 @@ body {
 /* Banner principal */
 header {
     width: 100%;
-    background: linear-gradient(135deg, #F9A4C0, #F76B9B); /* Gradiente suave em tons de rosa */
+    background: linear-gradient(135deg, #FFC0CB, #FFB6C1); /* Gradiente de rosa claro */
     text-align: center;
     padding: 80px 20px;
-    color: white;
+    color: #333333; /* Texto escuro para maior contraste */
 }
 
 .banner h1 {
@@ -31,7 +31,7 @@ header {
 .banner p {
     font-size: 1.3em;
     font-style: italic;
-    color: #FFF0F5;
+    color: #555555;
 }
 
 /* Conteúdo principal */
@@ -61,7 +61,7 @@ header {
 
 .section h2 {
     font-size: 2.2em;
-    color: #F76B9B; /* Cor de destaque para os títulos */
+    color: #FF69B4; /* Rosa mais vibrante para o título */
     margin-bottom: 15px;
     font-family: 'Georgia', serif;
     font-weight: bold;
@@ -71,61 +71,4 @@ header {
 .section p {
     font-size: 1.2em;
     color: #555555;
-    line-height: 1.6;
-}
-
-/* Botões e links */
-button, .highlight {
-    background-color: #F76B9B; /* Rosa vibrante */
-    color: white;
-    border: 2px solid #F76B9B;
-    padding: 15px 30px;
-    border-radius: 50px;
-    font-size: 1.1em;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-}
-
-button:hover, .highlight:hover {
-    background-color: white;
-    color: #F76B9B;
-    border-color: #F76B9B;
-    transform: translateY(-5px);
-}
-
-a {
-    text-decoration: none;
-    color: #F76B9B;
-    font-weight: bold;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-a:hover {
-    color: #F9A4C0; /* Rosa mais claro */
-    text-decoration: underline;
-}
-
-/* Rodapé */
-footer {
-    background-color: #F76B9B;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer p {
-    font-size: 14px;
-    font-family: 'Times New Roman', serif;
-}
-
-/* Responsividade - Ajuste para telas menores */
-@media (max-width: 768px) {
-    .content {
-        grid-template-columns: 1fr; /* 1 coluna em telas menores */
-    }
-}
+    line
