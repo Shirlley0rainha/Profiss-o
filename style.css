@@ -46,17 +46,23 @@ header {
 
 /* Seções */
 .section {
-    background-color: #F8F8F8; /* Fundo cinza claro */
-    padding: 40px;
+    background-color: #A9A9A9; /* Cor do contorno cinza escuro */
+    padding: 10px; /* Adiciona espaço para o contorno */
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.frame-content {
+    background-color: #F8F8F8; /* Fundo cinza claro */
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px; /* Ajusta o border-radius interno */
 }
 
 .section h2 {
