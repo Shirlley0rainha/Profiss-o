@@ -4,7 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profissão - Juiz</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            background-color: #FFFFFF;
+            color: #333333;
+            margin: 0;
+        }
+
+        /* Banner principal */
+        header {
+            width: 100%;
+            background: linear-gradient(135deg, #FFC0CB, #FFB6C1); /* Fundo rosa pastel */
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .banner h1 {
+            font-size: 3em;
+            font-family: 'Times New Roman', serif;
+            color: white; /* Cor do título em branco */
+            margin-bottom: 20px;
+        }
+
+        .banner p {
+            font-size: 1.3em;
+            font-style: italic;
+            color: white; /* Cor do subtítulo em branco */
+        }
+
+        /* Conteúdo principal */
+        .content {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        /* Seções - MODIFICAÇÃO PRINCIPAL */
+        .section {
+            background-color: #F8F8F8; /* Fundo cinza claro (mantido) */
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Nova moldura sofisticada */
+            border: 2px solid #D1D1D1; /* Cinza mais escuro para o contorno */
+            position: relative;
+        }
+
+        /* Efeito de destaque na borda ao passar o mouse */
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-color: #B0B0B0; /* Tom mais escuro no hover */
+        }
+
+        .section h2 {
+            font-size: 2.2em;
+            color: #FFB6C1; /* Títulos em rosa pastel */
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            color: black; /* Texto das colunas em preto */
+            line-height: 1.6;
+        }
+
+        /* Botões e links */
+        button, .highlight {
+            background-color: #FFB6C1;
+            color: #333333; /* Texto do botão em cor escura para contraste */
+            border: 2px solid #FFB6C1;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1em;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        button:hover, .highlight:hover {
+            background-color: white;
+            color: #FFB6C1;
+            border-color: #FFB6C1;
+            transform: translateY(-5px);
+        }
+
+        a {
+            text-decoration: none;
+            color: #FF69B4;
+            font-weight: bold;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        a:hover {
+            color: #FFC0CB;
+            text-decoration: underline;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #FFB6C1;
+            color: white; /* Texto do rodapé em branco */
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            font-size: 14px;
+            font-family: 'Times New Roman', serif;
+        }
+
+        /* Responsividade - Ajuste para telas menores */
+        @media (max-width: 768px) {
+            .content {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,28 +154,20 @@
 
     <section class="content">
         <div class="section">
-            <div class="frame-content">
-                <h2>Sobre a Profissão</h2>
-                <p>A função do juiz é aplicar a lei, tomar decisões com base em evidências e argumentos apresentados, garantir um julgamento assertivo, administrar o processo judicial e proteger os direitos e interesses da justiça. A presença do juiz é fundamental no sistema de justiça para a resolução de casos e conflitos.</p>
-            </div>
+            <h2>Sobre a Profissão</h2>
+            <p>A função do juiz é aplicar a lei, tomar decisões com base em evidências e argumentos apresentados, garantir um julgamento assertivo, administrar o processo judicial e proteger os direitos e interesses da justiça. A presença do juiz é fundamental no sistema de justiça para a resolução de casos e conflitos.</p>
         </div>
         <div class="section">
-            <div class="frame-content">
-                <h2>Como Ingressar na Faculdade</h2>
-                <p>Para se tornar juiz, o primeiro passo é a graduação em Direito. Para entrar na faculdade, você pode passar por um processo seletivo como o Exame Nacional do Ensino Médio (Enem) para concorrer a vagas em universidades públicas (Sisu) ou para obter bolsas de estudo em faculdades privadas (Prouni).</p>
-            </div>
+            <h2>Como Ingressar na Faculdade</h2>
+            <p>Para se tornar juiz, o primeiro passo é a graduação em Direito. Para entrar na faculdade, você pode passar por um processo seletivo como o Exame Nacional do Ensino Médio (Enem) para concorrer a vagas em universidades públicas (Sisu) ou para obter bolsas de estudo em faculdades privadas (Prouni).</p>
         </div>
         <div class="section">
-            <div class="frame-content">
-                <h2>Graduação</h2>
-                <p>O curso de graduação em Direito tem duração de cinco anos e forma bacharéis. A grade curricular é ampla, com disciplinas como Direito Constitucional, Civil, Penal, do Trabalho e Administrativo. O curso exige estágio supervisionado e a apresentação de um Trabalho de Conclusão de Curso (TCC).</p>
-            </div>
+            <h2>Graduação</h2>
+            <p>O curso de graduação em Direito tem duração de cinco anos e forma bacharéis. A grade curricular é ampla, com disciplinas como Direito Constitucional, Civil, Penal, do Trabalho e Administrativo. O curso exige estágio supervisionado e a apresentação de um Trabalho de Conclusão de Curso (TCC).</p>
         </div>
         <div class="section">
-            <div class="frame-content">
-                <h2>Mercado de Trabalho</h2>
-                <p>O mercado de trabalho para juízes é específico e concorrido, exigindo aprovação em um concurso público rigoroso. Após a graduação e a aprovação na OAB, é necessário comprovar pelo menos três anos de atividade jurídica para poder prestar o concurso para a magistratura, que oferece grande estabilidade e prestígio.</p>
-            </div>
+            <h2>Mercado de Trabalho</h2>
+            <p>O mercado de trabalho para juízes é específico e concorrido, exigindo aprovação em um concurso público rigoroso. Após a graduação e a aprovação na OAB, é necessário comprovar pelo menos três anos de atividade jurídica para poder prestar o concurso para a magistratura, que oferece grande estabilidade e prestígio.</p>
         </div>
     </section>
 

@@ -44,25 +44,24 @@ header {
     gap: 40px;
 }
 
-/* Seções */
+/* Seções - MODIFICAÇÃO PRINCIPAL */
 .section {
-    background-color: #A9A9A9; /* Cor do contorno cinza escuro */
-    padding: 10px; /* Adiciona espaço para o contorno */
+    background-color: #F8F8F8; /* Fundo cinza claro (mantido) */
+    padding: 40px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Nova moldura sofisticada */
+    border: 2px solid #D1D1D1; /* Cinza mais escuro para o contorno */
+    position: relative;
 }
 
+/* Efeito de destaque na borda ao passar o mouse */
 .section:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.frame-content {
-    background-color: #F8F8F8; /* Fundo cinza claro */
-    padding: 30px;
-    text-align: center;
-    border-radius: 8px; /* Ajusta o border-radius interno */
+    border-color: #B0B0B0; /* Tom mais escuro no hover */
 }
 
 .section h2 {
